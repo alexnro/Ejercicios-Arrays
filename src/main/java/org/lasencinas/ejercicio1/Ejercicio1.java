@@ -11,9 +11,9 @@ public class Ejercicio1 {
     private int posicionMenor = 0;
 
     public static void main(String[] args) {
-//        System.out.println("La tienda que menos ha vendido fue la " + (posicionMenor + 1) + ", que vendió " + menor + " €");
-//        System.out.println("La tienda que mas ha vendido fue la " + (posicionMayor + 1) + ", que vendió " + mayor + " €");
-//        System.out.println("El total de las ventas es: " + total + " €");
+        System.out.println("La tienda que menos ha vendido fue la " + (posicionMenor + 1) + ", que vendió " + menor + " €");
+        System.out.println("La tienda que mas ha vendido fue la " + (posicionMayor + 1) + ", que vendió " + mayor + " €");
+        System.out.println("El total de las ventas es: " + total + " €");
     }
 
     public double menorVenta() {
@@ -21,6 +21,7 @@ public class Ejercicio1 {
         for (int i = 0; i < ventas.length; i++) {
             if (ventas[i] < menor) {
                 menor = ventas[i];
+                posicionMenor = i;
             }
         }
         return menor;
@@ -31,8 +32,16 @@ public class Ejercicio1 {
         for (int i = 0; i < ventas.length; i++) {
             if (ventas[i] > mayor) {
                 mayor = ventas[i];
+                posicionMayor = i;
             }
         }
         return mayor;
+    }
+
+    public double totalVenta() {
+        for (int i = 0; i < ventas.length; i++) {
+            total += ventas[i];
+        }
+        return total;
     }
 }

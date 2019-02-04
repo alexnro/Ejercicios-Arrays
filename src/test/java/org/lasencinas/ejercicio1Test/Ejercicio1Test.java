@@ -25,7 +25,12 @@ public class Ejercicio1Test {
     @Test
     public void mayorVentaTest() {
 
-            assertEquals(8000, ejercicio.mayorVenta(), 8000);
-        ;
+        assertEquals(8000, ejercicio.mayorVenta(), 8000);
+    }
+
+    @Test
+    public void totalVentaTest() {
+
+        assertEquals(10921.34, ejercicio.totalVenta(), 10921);
     }
 }
