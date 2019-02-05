@@ -10,38 +10,63 @@ public class Ejercicio1 {
     private int posicionMayor = 0;
     private int posicionMenor = 0;
 
-    public static void main(String[] args) {
-        System.out.println("La tienda que menos ha vendido fue la " + (posicionMenor + 1) + ", que vendió " + menor + " €");
-        System.out.println("La tienda que mas ha vendido fue la " + (posicionMayor + 1) + ", que vendió " + mayor + " €");
-        System.out.println("El total de las ventas es: " + total + " €");
+    public Ejercicio1() {}
+
+    public Ejercicio1(double[] ventas, double mayor, double menor, double total, int posicionMayor, int posicionMenor) {
+        this.ventas = ventas;
+        this.mayor = mayor;
+        this.menor = menor;
+        this.total = total;
+        this.posicionMayor = posicionMayor;
+        this.posicionMenor = posicionMenor;
     }
 
-    public double menorVenta() {
-        menor = ventas[0];
-        for (int i = 0; i < ventas.length; i++) {
-            if (ventas[i] < menor) {
-                menor = ventas[i];
-                posicionMenor = i;
-            }
-        }
-        return menor;
-    }
-
-    public double mayorVenta() {
-        mayor = ventas[0];
-        for (int i = 0; i < ventas.length; i++) {
-            if (ventas[i] > mayor) {
-                mayor = ventas[i];
-                posicionMayor = i;
-            }
-        }
+    public double getMayor() {
         return mayor;
     }
 
-    public double totalVenta() {
-        for (int i = 0; i < ventas.length; i++) {
-            total += ventas[i];
-        }
+    public double getMenor() {
+        return menor;
+    }
+
+    public double getTotal() {
         return total;
+    }
+
+    public int getPosicionMayor() {
+        return posicionMayor;
+    }
+
+    public int getPosicionMenor() {
+        return posicionMenor;
+    }
+
+    public double menorVenta() {
+        this.menor = this.ventas[0];
+        for (int i = 0; i < this.ventas.length; i++) {
+            if (this.ventas[i] < this.menor) {
+                this.menor = this.ventas[i];
+                this.posicionMenor = i;
+            }
+        }
+        return this.menor;
+    }
+
+    public double mayorVenta() {
+        this.mayor = this.ventas[0];
+        for (int i = 0; i < this.ventas.length; i++) {
+            if (this.ventas[i] > this.mayor) {
+                this.mayor = this.ventas[i];
+                this.posicionMayor = i;
+            }
+        }
+        return this.mayor;
+    }
+
+    public double totalVenta() {
+        for (int i = 0; i < this.ventas.length; i++) {
+            this.total += this.ventas[i];
+        }
+        return this.total;
     }
 }
