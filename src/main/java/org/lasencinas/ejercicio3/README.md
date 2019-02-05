@@ -1,0 +1,1 @@
+3. Asigna a un Array 30 números enteros comprendidos entre 1 y 20. Muestra en consola el contenido del Array ordenado de menor a mayor. Utilizar el método sort de la clase Arrays.
