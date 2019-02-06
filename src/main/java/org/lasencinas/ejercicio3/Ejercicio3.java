@@ -8,9 +8,9 @@ public class Ejercicio3 {
     public static void main(String[] args) {
 
 
-        Arrays.sort(vector);
-        for (int numero : vector) {
-            System.out.println(numero);
-        }
+//        Arrays.sort(vector);
+//        for (int numero : vector) {
+//            System.out.println(numero);
+//        }
     }
 }

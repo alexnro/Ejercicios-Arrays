@@ -1,16 +1,13 @@
 package org.lasencinas.ejercicio2;
 
+import org.lasencinas.ejercicio2.ListaFinal
 import java.util.Random;
 
 public class Ejercicio2 {
 
     public static void main(String[] args) {
 
-        int[] lista = new int[25];
-        Random aleatorio = new Random();
-        double[] auxiliar = new double[4];
-        int sumaImpares = 0;
-        int min = 0;
+        ListaFinal resultado = new ListaFinal();
 
         // damos valores a lista
         for (int i = 0; i < lista.length; i++) {
