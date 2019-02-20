@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class ListaAleatoria {
 
-    int[] vector = new int[30];
-    Random aleatorio = new Random();
+    private int[] vector = new int[30];
+    private Random aleatorio = new Random();
 
     public int[] crearListaAleatoria() {
 
