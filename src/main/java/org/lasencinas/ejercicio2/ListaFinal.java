@@ -7,8 +7,8 @@ public class ListaFinal {
     double[] lista = new double[25];
     Random aleatorio = new Random();
     double[] auxiliar = new double[4];
-    int sumaImpares = 0;
-    int min = 0;
+    double sumaImpares = 0;
+    double min = 0;
 
     public double[] getLista() {
         return lista;
@@ -22,11 +22,11 @@ public class ListaFinal {
         return auxiliar;
     }
 
-    public int getSumaImpares() {
+    public double getSumaImpares() {
         return sumaImpares;
     }
 
-    public int getMin() {
+    public double getMin() {
         return min;
     }
 

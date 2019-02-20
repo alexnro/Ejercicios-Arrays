@@ -11,8 +11,10 @@ public class Ejercicio2Test {
     @Test
     public void generarListaTest() {
         ListaFinal ejercicio = new ListaFinal();
-
-        assertEquals(37.5, ejercicio.setListaAleatoria(), 12.5);
+        ejercicio.setListaAleatoria();
+        for(int i = 0; i < ejercicio.getLista().length; i++) {
+            assertEquals(37.5, ejercicio.getLista()[i], 12.5);
+        }
     }
 
 }

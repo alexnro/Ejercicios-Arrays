@@ -11,7 +11,7 @@ public class Ejercicio2 {
         // damos valores a lista
         resultado.setListaAleatoria();
 
-        for (double i = 0; i < resultado.getLista().length; i++) {
+        for (int i = 0; i < resultado.getLista().length; i++) {
             if (resultado.getLista()[i] % 2 == 0) {
                 resultado.getAuxiliar()[0]++;
             } else {
